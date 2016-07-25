@@ -1,0 +1,27 @@
+body {
+  background: black;
+  color: white;
+  height: 100%;
+  margin: 0;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#info {
+  position: absolute;
+}
+
+#info h3 {
+  margin-left: 10px;
+}
+
+#info ul {
+  list-style: none;
+}

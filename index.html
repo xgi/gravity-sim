@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gravity Sim</title>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/definitions.js"></script>
+		<script src="js/physics.js"></script>
+		<script src="js/ui.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div id="info">
+			<h3>Controls</h3>
+			<ul>
+				<li><b>click</b> - create a particle</li>
+				<li><b>click + drag</b> - create a particle with velocity</li>
+				<li><b>shift + drag</b> - pan the camera</li>
+				<br>
+				<li><b>up</b> - double mass</li>
+				<li><b>down</b> - halve mass</li>
+				<li><b>f</b> - follow the largest particle</li>
+				<li><b>v</b> - show velocities</li>
+				<br>
+				<li><b>h</b> - hide/show this panel</li>
+			</ul>
+			<h3>Stats</h3>
+			<ul>
+				<li id="num-particles"><b>Particles: </b>0</li>
+				<li id="mass"><b>Mass: </b>1024</li>
+				<li id="following"><b>Following: </b>false</li>
+		</div>
+	</body>
+</html>
