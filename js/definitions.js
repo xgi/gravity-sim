@@ -28,6 +28,7 @@ function Particle(m, v, x, y) {
 	this.absorb = function(p) {
 		this.velocity.x = (this.velocity.x * this.mass + p.velocity.x * p.mass) / (this.mass + p.mass);
 		this.velocity.y = (this.velocity.y * this.mass + p.velocity.y * p.mass) / (this.mass + p.mass);
+		this.velocity.calculate();
 		this.mass += p.mass;
 		this.radius = Math.cbrt(this.mass);
 
