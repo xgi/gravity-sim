@@ -45,6 +45,9 @@ function updateVelocity(particles) {
 		// apply total force applied to this particle to its velocity
 		particles[i].velocity.x += forceSum.x / particles[i].mass;
 		particles[i].velocity.y += forceSum.y / particles[i].mass;
+
+		// recalculate velocity angle and magnitude
+		particles[i].velocity.calculate();
 	}
 }
 

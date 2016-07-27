@@ -1,8 +1,13 @@
 function Vector(x, y) {
 	this.x = x;
 	this.y = y;
-	this.magnitude = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
-	this.angle = Math.atan(this.y / this.x);
+
+	this.calculate = function() {
+		this.angle = Math.atan(this.y / this.x)
+		this.magnitude = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
+	}
+
+	this.calculate();
 }
 
 function Color() {
