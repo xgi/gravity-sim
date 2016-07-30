@@ -3,7 +3,7 @@ function Vector(x, y) {
 	this.y = y;
 
 	this.calculate = function() {
-		this.angle = Math.atan(this.y / this.x)
+		this.angle = Math.atan2(this.y, this.x);
 		this.magnitude = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
 	}
 
