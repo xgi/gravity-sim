@@ -8,7 +8,7 @@ function paintParticles(particles) {
 /* Calculate force between particles p1 and p2 */
 function calculateForce(p1, p2, vector) {
 	// GravitationalForce = GravityConstant * (mass1 * mass2) / dist^2
-	// reference: http://csep10.phys.utk.edu/astr161/lect/history/newtongrav.html
+	// reference: https://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation#Modern_form
 	return gravity * (p1.mass * p2.mass) / Math.pow(vector.magnitude, 2);
 }
 
