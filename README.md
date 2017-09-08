@@ -16,6 +16,10 @@ gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitati
 
 `down arrow` - halve the current mass.
 
+`left arrow` - increase the gravitational constant.
+
+`right arrow` - decrease the gravitational constant.
+
 `f` - focus the viewport on the most massive particle. This particle will have
 its velocity forced to zero to make the velocities of other particles relative
 to it.

@@ -133,8 +133,18 @@ $(document).ready(function (e) {
 			if (mass > 1024) {
 				mass /= 2;
 				$('#mass').html('<b>Mass: </b>' + mass);
-			}
-		}
+            }
+        } else if (e.which == 37) { // left arror
+            if (gravity > 0.25) {
+                gravity -= 0.25;
+                $('#gravity').html('<b>Gravity: </b>' + gravity.toFixed(2));
+            }
+        } else if (e.which == 39) { // right arror
+            if (gravity < 2) {
+                gravity += 0.25;
+                $('#gravity').html('<b>Gravity: </b>' + gravity.toFixed(2));
+            }
+        }
 	});
 
 	t = setInterval(function() {
